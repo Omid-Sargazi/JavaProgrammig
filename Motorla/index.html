@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery">
+       <img src="./Images/1.png" alt="Product 1" onclick="showDetails(1)">
+       <img src="./Images/2.png" alt="Product 1" onclick="showDetails(2)">
+       <img src="./Images/3.png" alt="Product 1" onclick="showDetails(3)">
+    </div>
+
+    <div class="overlay" onclick="hideDetails()"></div>
+
+    <div class="product-details" id="product1">
+        <h2>Product 1</h2>
+        <p>This is the detailed description of Product 1. It's a great product with many features.</p>
+    </div>
+
+    <div class="product-details" id="product2">
+        <h2>Product 2</h2>
+        <p>This is the detailed description of Product 2. It offers excellent value for money.</p>
+    </div>
+
+    <div class="product-details" id="product3">
+        <h2>Product 3</h2>
+        <p>This is the detailed description of Product 3. It's known for its premium quality.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
