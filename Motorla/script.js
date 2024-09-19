@@ -22,3 +22,16 @@ function hideDetails() {
 
     document.querySelector('.overlay').style.display = 'none';
 }
+
+function searchInDetails(productId) {
+    // Get the search input and the corresponding product content
+    var searchInput = document.getElementById('search' + productId).value.toLowerCase();
+    var productContent = document.querySelector('#product' + productId + ' .product-content');
+
+    // Filter the content based on the search input
+    if (productContent.textContent.toLowerCase().includes(searchInput)) {
+        productContent.style.display = 'block'; // Show matching content
+    } else {
+        productContent.style.display = 'none'; // Hide non-matching content
+    }
+}
