@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Product Section -->
+    <div class="product-section">
+        <div class="main-product">
+            <h1 id="product-name">Main Product</h1>
+            <p id="product-price">$99.99</p>
+            <button id="add-to-cart">Add to Cart</button>
+            <button id="choice-product">Choice Product</button>
+        </div>
+        <div id="selected-products" class="selected-products">
+            <!-- Selected products will appear here -->
+        </div>
+    </div>
+
+    <!-- Modal for Product Selection -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <input type="text" id="search-bar" placeholder="Search products..." />
+            <div id="product-list" class="product-list">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
