@@ -1,7 +1,7 @@
 // Sample products data from JSON file (you can load this via AJAX)
 const products = [
-    { id: 1, name: 'Product 1', price: '$10', image: 'image1.jpg' },
-    { id: 2, name: 'Product 2', price: '$15', image: 'image2.jpg' },
+    { id: 1, name: 'Product 1', price: '$10', image: 'Image/1.png' },
+    { id: 2, name: 'Product 2', price: '$15', image: 'Image/2.png' },
     // More products (up to 2000) should be listed here
 ];
 
