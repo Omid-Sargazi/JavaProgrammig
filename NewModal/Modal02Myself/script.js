@@ -16,5 +16,10 @@ document.addEventListener("DOMContentLoaded",()=>{
         { id: 5, name: "Product 5", price: "$90", image: "./Image/2.png", description: "Product 5 description" }
     ];
 
+    modalClose.onclick= function()
+    {
+        modal.style.display="none";
+    }
+
 
 })
