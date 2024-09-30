@@ -21,5 +21,11 @@ document.addEventListener("DOMContentLoaded",()=>{
         modal.style.display="none";
     }
 
+    choiceItemBtn.onclick = function()
+    {
+        modal.style.display="block"
+        
+    }
+
 
 })
