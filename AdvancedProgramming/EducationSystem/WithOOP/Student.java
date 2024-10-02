@@ -27,5 +27,13 @@ public class Student {
         }
     }
 
+    public void printGrades()
+    {
+        System.out.println("Grades for " + name + ":");
+        for (Map.Entry<Course, Integer> entry : courseGrade.entrySet()) {
+            System.out.println(entry.getKey().getName() + ": " + (entry.getValue() == null ? "Not graded" : entry.getValue()));
+        }
+    }
+
 
 }
