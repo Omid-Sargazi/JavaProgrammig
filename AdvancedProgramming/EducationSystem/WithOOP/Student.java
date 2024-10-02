@@ -17,5 +17,15 @@ public class Student {
         courseGrade.put(course,null);
     }
 
-    
+    public void assignGrade(Course course, int grade)
+    {
+        if(courseGrade.containsKey(course))
+        {
+            courseGrade.put(course, grade);
+        }else{
+            System.out.println("Student is not enrolled in this course.");
+        }
+    }
+
+
 }
