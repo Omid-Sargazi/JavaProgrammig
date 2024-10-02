@@ -17,4 +17,9 @@ public class EducationSystem {
      {
         students.add(name);
      }
+
+     public static void addCourse(String course)
+     {
+        courses.add(course);
+     }
 }
