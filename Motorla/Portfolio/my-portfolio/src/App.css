@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
@@ -46,8 +47,12 @@ section h2 {
 }
 
 .project a {
-  color: #333;
+  color: #3b9e3b; /* Green for project links */
   text-decoration: none;
+  font-weight: bold;
+}
+.project a:hover {
+  color: #ffcc00; /* Yellow on hover */
 }
 
 footer {
@@ -60,4 +65,72 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+}
+section#about {
+  background-color: #f0f0f0; /* Light gray for About section */
+}
+
+h2 {
+  color: #3b9e3b; /* Green for headings */
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  background-color: #3b9e3b; /* Green background for skills */
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffcc00; /* Yellow button */
+  color: #333; /* Dark text on yellow button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #3b9e3b; /* Green on hover */
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333; /* Dark gray footer */
+  color: white;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffcc00; /* Yellow for footer links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #3b9e3b; /* Green on hover */
 }
