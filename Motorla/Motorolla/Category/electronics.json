@@ -1,0 +1,16 @@
+{
+    "products": [
+        {
+            "name": "Smartphone X1",
+            "image": "images/smartphone-x1.jpg",
+            "description": "Latest smartphone with 128GB storage.",
+            "price": "499.99"
+        },
+        {
+            "name": "Wireless Earbuds Pro",
+            "image": "images/earbuds-pro.jpg",
+            "description": "Noise-canceling wireless earbuds.",
+            "price": "199.99"
+        }
+    ]
+}
