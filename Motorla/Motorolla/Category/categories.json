@@ -1,0 +1,7 @@
+{
+    "categories": [
+        {"name": "Electronics", "icon": "icons/electronics.png"},
+        {"name": "Fashion", "icon": "icons/fashion.png"},
+        {"name": "Home", "icon": "icons/home.png"}
+    ]
+}
