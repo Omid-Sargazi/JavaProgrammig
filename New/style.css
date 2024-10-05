@@ -1,0 +1,31 @@
+/* Basic styling for the category list */
+.category-container {
+    width: 100%;
+  }
+  
+  .category-list, .nested-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-left: 2px solid #ccc;
+    cursor: pointer;
+  }
+  
+  /* Initially hide all nested lists */
+  .nested-list {
+    display: none;
+    margin-left: 20px; /* Indent the nested lists */
+    padding-left: 10px;
+  }
+  
+  /* Add a visible class to display the nested list when clicked */
+  .nested-list.visible {
+    display: block;
+  }
+  
