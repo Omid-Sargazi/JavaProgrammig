@@ -1,0 +1,15 @@
+.category-list ul
+{
+    display: none;
+}
+
+.category-list li
+{
+    display: none;
+}
+
+.category-list li:first-child
+{
+    display: list-item;
+    cursor: pointer;
+}
