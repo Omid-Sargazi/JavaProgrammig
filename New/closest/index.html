@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+    </div>
+    <script>
+        const item=document.querySelector('.item');
+        const closestDiv = item.closest('.container')
+        console.log(closestDiv);
+    </script>
+</body>
+</html>
