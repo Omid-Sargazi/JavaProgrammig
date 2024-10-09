@@ -1,0 +1,46 @@
+nav
+{
+    background: #333;
+    padding: 0.5rem;
+}
+
+.menu
+{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+#menu-toggle
+{
+    display: none;
+}
+
+.menu-icon
+{
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width:600px) {
+    .menu{
+        display: none;
+        flex-direction: column;
+    }    
+
+    #menu-toggle:checked + .menu-icon + .menu
+    {
+        display: flex;
+    }
+
+    .menu-icon
+    {
+        display: block;
+    }
+}
