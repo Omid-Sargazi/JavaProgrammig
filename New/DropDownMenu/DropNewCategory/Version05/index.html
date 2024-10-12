@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Motorola Product Categories</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        Motorolla Categories
-    </div>
+    <div class="header">Motorola Categories</div>
     <ul class="category-list">
-        <li class="category-item" data-category="Apple Accessories">
-            <span class="material-icons">phone_iphone</span>
-            Apple Accessories
+        <li class="category-item" data-category="بدون دسته‌بندی">
+            بدون دسته‌بندی
         </li>
-        <li class="category-item" data-category="Samsung Accessories">
-            <span class="material-icons">smartphone</span>
-            Samsung Accessories
+        <li class="category-item" data-category="پرفروش های موتورولا">
+            پرفروش های موتورولا
         </li>
-
-        <li class="category-item" data-category="Xiaomi Accessories">
-            <span class="material-icons">devices</span>
-            Xiaomi Accessories
+        <li class="category-item" data-category="تلفن های همراه موتورولا">
+            تلفن های همراه موتورولا
+        </li>
+        <li class="category-item" data-category="قطعات موتورولا">
+            قطعات موتورولا
+            <ul class="sub-menu">
+                <li class="sub-category-item" data-category="قطعات سری موتورولا ایکس">
+                    قطعات سری موتورولا ایکس
+                    <ul class="sub-menu">
+                        <li class="sub-category-item">Battery</li>
+                        <li class="sub-category-item">Screen</li>
+                        <li class="sub-category-item">Camera</li>
+                    </ul>
+                </li>
+                <li class="sub-category-item" data-category="قطعات سری موتورولا جی">
+                    قطعات سری موتورولا جی
+                    <ul class="sub-menu">
+                        <li class="sub-category-item">Motherboard</li>
+                        <li class="sub-category-item">Speakers</li>
+                    </ul>
+                </li>
+                <li class="sub-category-item" data-category="قطعات سری موتورولا دروید">
+                    قطعات سری موتورولا دروید
+                    <ul class="sub-menu">
+                        <li class="sub-category-item">Charging Port</li>
+                        <li class="sub-category-item">Headphone Jack</li>
+                    </ul>
+                </li>
+            </ul>
         </li>
     </ul>
-    <div class="modal" id="productModal">
-        <div class="modal-content">
-            <span class="close-button" id="closeModal">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <ul class="sub-product-list" id="subProductList"></ul>
-        </div>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
