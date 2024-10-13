@@ -1,0 +1,64 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+}
+
+header
+{
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li{
+    margin: 0 15px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-section
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1
+{
+    margin: 0 0 20px;
+    font-size: 2.5rem;
+}
+
+.hero-section p{
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+}
+
+.cta-button
+{
+    background: white;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
