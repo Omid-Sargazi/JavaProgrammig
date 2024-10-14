@@ -1,0 +1,44 @@
+/* Add Google Material Icons */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Styling for the menu */
+.menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    justify-content: flex-end; /* Ensure alignment to the right */
+}
+
+/* Make sure the text and icons are aligned */
+.menu li a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    text-align: right;
+    direction: rtl; /* Ensure RTL layout */
+}
+
+/* Style for the icons */
+.material-icons {
+    font-size: 24px;
+    margin-left: 10px; /* Space between icon and text */
+}
+
+/* Hover effect */
+.menu li:hover {
+    background-color: #f1c40f;
+}
+
+/* Sub-menu styling (if needed) */
+.sub-menu {
+    display: none;
+    padding-right: 20px; /* Proper padding for RTL */
+}
+
+.menu li:hover > .sub-menu {
+    display: block;
+}
