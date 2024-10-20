@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="menuBtn">☰</button>
+        <div class="logo">LOGO</div>
+        <button id="searchBtn">🔍</button>
+    </header>
+
+    <section id="products">
+        <!-- Product list here -->
+    </section>
+    <div id="productPage" class="hidden">
+        <div class="product-list"></div>
+        <button id="loadMoreBtn">Load More</button>
+    </div>
+    
+
+    <footer>
+        <button id="homeBtn">Home</button>
+        <button id="categoriesBtn">Categories</button>
+        <button id="cartBtn">Cart</button>
+        <button id="accountBtn">Account</button>
+    </footer>
+
+    <div id="categoryPage" class="hidden">
+        <div class="category-list">
+            <!-- Category list will be dynamically generated -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
