@@ -1,0 +1,16 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    background-color: #343a40;
+  }
+  
