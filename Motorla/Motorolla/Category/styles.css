@@ -1,0 +1,131 @@
+/* Category Page */
+#categoryPage {
+    position: fixed; /* Ensure the page covers content but not the footer */
+    top: 60px; /* Below the fixed header */
+    bottom: 60px; /* Above the fixed footer */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    overflow-y: auto;
+    display: none; /* Hidden by default */
+    z-index: 999; /* Make sure it's above the content */
+}
+
+#categoryPage.active {
+    display: block; /* Show category page when active */
+}
+
+/* Category items */
+
+
+/* Footer remains fixed and visible */
+/* Footer remains fixed and visible */
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    z-index: 1000; /* Ensure footer stays above the content */
+}
+
+/* Category Page should not cover the footer */
+#categoryPage {
+    position: fixed;
+    top: 60px; /* Below the header */
+    bottom: 60px; /* Above the footer */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    overflow-y: auto;
+    z-index: 999; /* Ensure it's below the footer */
+}
+
+/* Main content scrollable without covering footer */
+#products {
+    padding-top: 80px; /* To prevent overlap with the fixed header */
+    padding-bottom: 80px; /* To prevent overlap with the fixed footer */
+    overflow-y: auto;
+    max-height: calc(100vh - 120px); /* Full height minus header and footer */
+}
+
+/* Category list styles */
+.category-list {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 120px); /* Fit between header and footer */
+}/* Adjust category list to a vertical column layout */
+.category-list {
+    display: block; /* Block display to ensure vertical stacking */
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 120px); /* Ensures it fits within the screen without hiding footer */
+}
+
+/* Each category is stacked in a vertical column */
+.category {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc; /* Horizontal line separating each category */
+}
+
+.category img {
+    width: 50px; /* Icon size */
+    height: auto;
+    margin-right: 15px;
+}
+
+.category span {
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .category span {
+        font-size: 14px; /* Smaller font size on smaller screens */
+    }
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .category span {
+        font-size: 14px; /* Smaller font size on smaller screens */
+    }
+}
+
+
+/* Product Layout */
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product img {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+}
