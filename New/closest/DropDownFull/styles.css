@@ -1,0 +1,77 @@
+.product-list
+{
+    overflow: hidden;
+}
+
+.product-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.product-list ul li{
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+
+.product-list li:hover
+{
+    background: #f4c340;
+    color: #333;
+}
+
+.sub-products
+{
+    display: none;
+}
+
+.sub-products
+{
+    overflow: hidden;
+}
+
+.sub-products ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.sub-products ul li{
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+
+.sub-products li:hover
+{
+    background: #f4c340;
+    color: #333;
+}
+
+
+
+
+
+
+
+/* .product-list li i{
+    display: inline-block;
+    vertical-align: middle;
+    height: 37px;
+    width: 37px;
+    margin-right: 10px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product-list li:nth-child(1)
+{
+    background-image: url(	https://img.myipadbox.com/htdocs/client/app/images/c-m-2.png);
+} */

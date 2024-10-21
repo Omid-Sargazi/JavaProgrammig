@@ -1,0 +1,73 @@
+/* Style for the product list */
+.product-list {
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.product-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.product-list ul li {
+    position: relative;
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.product-list li:hover {
+    background: #f4c340;
+    color: #333;
+}
+
+/* Sub-products styling */
+.sub-products {
+    position: fixed; /* Fixed positioning to cover the entire page */
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: transform 1s ease, opacity 1s ease; /* Smooth transition with 1 second duration */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 20px; /* Create a margin-like effect on the left */
+    z-index: 10;
+}
+
+.sub-products ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.sub-products ul li {
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    padding: 0 15px;
+    background: #f9f9f9;
+    transition: background 0.3s ease;
+}
+
+.sub-products ul li:hover {
+    background: #f1f1f1;
+}
+
+/* Show the sub-products on hover */
+.product-list ul li:hover .sub-products {
+    opacity: 1;
+    transform: translateX(0); /* Slide in from right to left */
+}
+
+

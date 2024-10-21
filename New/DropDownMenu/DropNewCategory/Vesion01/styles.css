@@ -1,0 +1,38 @@
+.category {
+    margin: 20px;
+}
+
+.dropdown {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.dropdown-button, .sub-dropdown-button {
+    background-color: #f0c14b;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.sub-dropdown-button {
+    background-color: #ddd;
+}
+
+.sub-dropdown-button:hover {
+    background-color: #ccc;
+}
+
+.dropdown-button:focus + .dropdown-content,
+.sub-dropdown-button:focus + .dropdown-content {
+    display: block;
+}

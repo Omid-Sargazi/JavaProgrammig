@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Choice Item Section -->
+        <div class="choice-item-section">
+            <button id="choiceItemBtn">Choice Item</button>
+        </div>
+
+        <!-- Selected Products Section (will be dynamically populated) -->
+        <div id="selectedProducts">
+            <!-- Selected products will appear here -->
+        </div>
+
+        <!-- Main Product Section -->
+        <div class="product-section">
+            <div class="product-card">
+                <h2>Main Product</h2>
+                <img src="Image/1.png" alt="Main Product Image" class="main-product-image">
+                <p>Price: $100</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select a Product</h2>
+            <input type="text" id="search" placeholder="Search products...">
+            <div id="productList">
+                <!-- Products from JSON will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

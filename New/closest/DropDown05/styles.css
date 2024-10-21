@@ -1,0 +1,57 @@
+/* Style for the product list */
+.product-list {
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.product-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.product-list ul li {
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.product-list li:hover {
+    background: #f4c340;
+    color: #333;
+}
+
+/* Sub-products modal styling */
+.sub-products {
+    position: fixed;
+    top: 0;
+    left: 100%; /* Initially off-screen to the right */
+    width: calc(100% - 20px); /* Leave a 20px margin on the left */
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease;
+    z-index: 10;
+    padding: 20px;
+}
+
+.sub-content {
+    overflow-y: auto;
+    height: calc(100% - 40px); /* Account for the close button */
+}
+
+#close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #f4c340;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

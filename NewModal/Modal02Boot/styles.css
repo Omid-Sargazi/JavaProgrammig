@@ -1,0 +1,16 @@
+/* Custom Styles */
+.selected-product {
+    flex: 0 0 30%;
+    margin: 10px;
+}
+
+.selected-product img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.selected-product p {
+    margin: 0;
+    text-align: center;
+}

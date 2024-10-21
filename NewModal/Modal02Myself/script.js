@@ -24,7 +24,29 @@ document.addEventListener("DOMContentLoaded",()=>{
     choiceItemBtn.onclick = function()
     {
         modal.style.display="block"
-        
+        loadProducts(products);
+
+    }
+
+    function loadProducts(products)
+    {
+        productList.innerHTML="";
+        products.forEach(product=>{
+            const productItem = document.createElement("div");
+            productItem.className="product-item";
+            productItem.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <p>${product.name}</p>
+                <p>${product.price}</p>
+                <p>${product.description}</p>
+            `
+
+            productItem.onclick = function() {
+                // selectProduct(product);
+                console.log("click")
+            };
+            productList.appendChild(productItem);
+        })
     }
 
 
