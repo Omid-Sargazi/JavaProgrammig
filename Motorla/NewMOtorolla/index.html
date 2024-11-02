@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<ul>
+    <li onclick="openModal(this)">Category 1
+        <ul class="nested-ul">
+            <li>Subcategory 1.1</li>
+            <li>Subcategory 1.2</li>
+        </ul>
+    </li>
+    <li onclick="openModal(this)">Category 2
+        <ul class="nested-ul">
+            <li>Subcategory 2.1</li>
+            <li>Subcategory 2.2</li>
+        </ul>
+    </li>
+    <!-- Add more categories as needed -->
+</ul>
+
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close-button" class="close-button">&times;</span>
+        <div id="modal-content"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
